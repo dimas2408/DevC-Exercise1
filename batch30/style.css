@@ -1,0 +1,66 @@
+/* .blue {
+    color: blue;
+    font-size: 16px;
+}
+
+.font12 {
+    font-size: 12px;
+}
+
+#id01 {
+    border: 1px solid black;
+    color: red;
+} */
+
+.alert h1 {
+    font-family: Brush Script MT;
+}
+
+.background-kotak {
+    background: rgb(30, 198, 210);
+    width: 800px;
+    min-height: 800px;
+    margin: -16px auto;
+    padding: 20px 30px;
+}
+
+.nama {
+    width: 300px;
+    margin-left: 65px;
+    outline: none;
+    text-align: center;
+}
+
+.tempat {
+    width: 300px;
+    margin-left: 15px;
+    outline: none;
+    text-align: center;
+}
+
+.tanggal {
+    width: 300px;
+    margin-left: 12px;
+    outline: none;
+    text-align: center;
+}
+
+.alamat {
+    width: 300px;
+    margin-left: 59px;
+}
+
+.btn {
+    margin-left: 120px;
+}
+
+.btn-outline-white {
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-outline-white:hover {
+    color: #fff;
+    border-color: #3fa48d;
+    background: #3fa48d;
+}
