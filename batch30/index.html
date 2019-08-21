@@ -8,32 +8,33 @@
 </head>
 
 <body class="bg-dark">
-    <center>
-
-        <div class="alert alert-primary" role="alert">
-            <h1>Biodata Diri</h1>
-        </div>
-    </center>
     <div class="container">
-        <div class="background-kotak">
+        <div class="background-kotak1" id="kotak1">
+            <center>
+                <h1>Form Input</h1>
+            </center>
             <div class="row">
                 <div class="col-8">
                     <form action="">
                         <div class="mb-2">
-                            <label for="">Nama :</label>
-                            <input type="text" class="rounded-pill nama ">
+                            <label for="nama">Nama </label>
+                            <input type="text" class="rounded-pill nama" id="nama">
                         </div>
                         <div class="mb-2">
-                            <label for="">Tempat Lahir :</label>
-                            <input type="text" class="rounded-pill tempat">
+                            <label for="tempat">Tempat Lahir </label>
+                            <input type="text" class="rounded-pill tempat" id="tempat">
                         </div>
                         <div class="mb-2">
-                            <label for="">Tanggal Lahir :</label>
-                            <input type="date" class="rounded-pill tanggal">
+                            <label for="tanggal">Tanggal Lahir </label>
+                            <input type="date" class="rounded-pill tanggal" id="tanggal">
                         </div>
                         <div class="mb-2">
-                            <label for="">Alamat :</label>
-                            <textarea type="text" class="alamat" rows="5"></textarea>
+                            <label for="handphone">No. Handphone </label>
+                            <input type="text" class="rounded-pill handphone" id="handphone">
+                        </div>
+                        <div class="mb-2">
+                            <label for="alamat">Alamat </label>
+                            <textarea type="text" class="alamat" rows="5" id="alamat"></textarea>
                         </div>
                         <div>
                             <button class="btn btn-outline-white rounded-pill">Submit</button>
@@ -41,11 +42,82 @@
                     </form>
                 </div>
                 <div class="col-4">
-                    <img src="images/dimas.jpg" alt="">
+                    <a href="#kotak2"><img src="images/dimas.jpg" class="img-thumbnail" data-toggle="tooltip"
+                            data-placement="top" title="Klik untuk lihat biodata saya!!"></a>
                 </div>
             </div>
         </div>
-    </div>
+
+        <div class="background-kotak2" id="kotak2">
+            <center>
+                <h1>Biodata Diri</h1>
+            </center>
+            <div class="row">
+                <div class="col-9">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Nama Lengkap</td>
+                                <td>:</td>
+                                <td>Dimas Agnesia Pangestu</td>
+                            </tr>
+                            <tr>
+                                <td>Tempat Tgl/Lahir</td>
+                                <td>:</td>
+                                <td>Bogor, 24 Agustus 1984</td>
+                            </tr>
+                            <tr>
+                                <td>No. Handphone</td>
+                                <td>:</td>
+                                <td>0812 8228 2547</td>
+                            </tr>
+                            <tr>
+                                <td>Pendidikan</td>
+                                <td>:</td>
+                                <td>D3 - Akuntansi</td>
+                            </tr>
+                            <tr>
+                                <td>Agama</td>
+                                <td>:</td>
+                                <td>Islam</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>:</td>
+                                <td>dimas.pangestu2408@yahoo.com</td>
+                            </tr>
+                            <tr>
+                                <td>Pekerjaan</td>
+                                <td>:</td>
+                                <td>Karyawan Bank</td>
+                            </tr>
+                            <tr>
+                                <td>Alamat</td>
+                                <td>:</td>
+                                <td>PUP Blok LL5 No.23 RT.07/22 Kaliabang Tengah Bekasi Utara</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-2">
+                    <a href="#kotak1"><img src="images/dimas.jpg" alt="" class="rounded-circle" data-toggle="tooltip"
+                            data-placement="top" title=" Klik untuk kembali ke Form
+                            Input!!"></a>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
 </body>
 
 </html>

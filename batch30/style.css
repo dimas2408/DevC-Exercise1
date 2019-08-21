@@ -1,41 +1,72 @@
-/* .blue {
-    color: blue;
-    font-size: 16px;
+html {
+    scroll-behavior: smooth;
 }
 
-.font12 {
-    font-size: 12px;
-}
-
-#id01 {
-    border: 1px solid black;
-    color: red;
-} */
-
-.alert h1 {
-    font-family: Brush Script MT;
-}
-
-.background-kotak {
+.background-kotak1 {
     background: rgb(30, 198, 210);
     width: 800px;
-    min-height: 800px;
-    margin: -16px auto;
+    min-height: 500px;
+    margin: 30px auto;
     padding: 20px 30px;
+    box-shadow: 30px 30px #fff;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.background-kotak1:hover,
+.background-kotak2:hover {
+    box-shadow: 30px 30px rgb(51, 153, 167);
+    transition: 1s;
+}
+
+.background-kotak2 {
+    background: rgb(30, 198, 210);
+    width: 1100px;
+    min-height: 500px;
+    margin: 65px auto;
+    padding: 20px 30px;
+    box-shadow: 30px 30px #fff;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+center h1 {
+    color: #fff;
+    font-size: 50px;
+    font-family: Brush Script MT;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px rgb(8, 8, 8);
+}
+
+label {
+    color: #fff;
+    font-size: 30px;
+    font-family: Brush Script MT;
+    text-shadow: 1px 1px rgb(8, 8, 8);
 }
 
 .nama {
     width: 300px;
-    margin-left: 65px;
+    margin-left: 99px;
     outline: none;
-    text-align: center;
 }
 
 .tempat {
     width: 300px;
-    margin-left: 15px;
+    margin-left: 20px;
     outline: none;
-    text-align: center;
 }
 
 .tanggal {
@@ -45,13 +76,22 @@
     text-align: center;
 }
 
+.handphone {
+    width: 300px;
+    margin-left: 9px;
+    outline: none;
+    text-align: center;
+}
+
 .alamat {
     width: 300px;
-    margin-left: 59px;
+    margin-right: 17px;
+    float: right;
+    margin-bottom: 10px;
 }
 
 .btn {
-    margin-left: 120px;
+    margin-left: 165px;
 }
 
 .btn-outline-white {
@@ -63,4 +103,33 @@
     color: #fff;
     border-color: #3fa48d;
     background: #3fa48d;
+}
+
+.col-4 img {
+    margin-top: 10px;
+    margin-left: -20px;
+}
+
+.col-4 img:hover {
+    box-shadow: 0 0 15px 5px rgba(250, 249, 249, 0.7);
+    cursor: pointer;
+}
+
+table {
+    color: #fff;
+    font-size: 23px;
+    font-family: Brush Script MT;
+    text-shadow: 1px 1px rgb(8, 8, 8);
+}
+
+.rounded-circle {
+    width: 234px;
+    margin-top: 6px;
+    margin-left: -12px;
+    border: 10px solid #eceac7;
+}
+
+.rounded-circle:hover {
+    box-shadow: 0 0 15px 5px rgba(250, 249, 249, 0.7);
+    cursor: pointer;
 }
