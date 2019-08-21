@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-dark">
+<body>
     <div class="container">
         <div class="background-kotak1" id="kotak1">
             <center>
@@ -110,9 +110,22 @@
 
         <script src="js/jquery-3.3.1.slim.min.js"></script>
         <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.js"></script>
 
+        <script>
+            var video = document.getElementById("myVideo");
+            var btn = document.getElementById("myBtn");
 
+            function myFunction() {
+                if (video.paused) {
+                    video.play();
+                    btn.innerHTML = "Pause";
+                } else {
+                    video.pause();
+                    btn.innerHTML = "Play";
+                }
+            }
+        </script>
         <script>
             $(document).ready(function () {
                 $('[data-toggle="tooltip"]').tooltip();
